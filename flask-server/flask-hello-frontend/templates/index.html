@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Static file test: below is an image served from <code>static/img/</code>.</p>
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="160">
+  </body>
+</html>
